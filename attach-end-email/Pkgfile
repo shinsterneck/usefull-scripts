@@ -1,0 +1,14 @@
+# Description: attach-and-email - Open email client with supplied file as attachment
+# URL: 
+# Maintainer: Shin Sterneck, shin at sterneck dot asia
+# Depends on: 
+
+name=attach-and-email
+version=1.0
+release=1
+source=(email.sh)
+#source=()
+
+build() {
+	install -Dm 755 email.sh $PKG/usr/bin/email
+}
